@@ -3,7 +3,7 @@
 this repo is create by `create-react-app`
 
 # Installation
-use method #1, install `lodash`
+### use method #1, install `lodash`
 ```bash
 $ yarn add lodash
 ```
@@ -13,7 +13,7 @@ import _ from './1';
 const { get, tail, times, uniq } = _;
 ```
 
-use method #1 #2 #3, install `lodash`
+### use method #2 #3, install `lodash`
 ```bash
 $ yarn add lodash
 ```
@@ -23,7 +23,7 @@ import { get, tail, times, uniq } from './2';
 // import { get, tail, times, uniq } from './3';
 ```
 
-use #4, install `lodash.{method}` one by one
+### use method #4, install `lodash.{method}` one by one
 ```bash
 $ yarn add lodash.get lodash.tail lodash.times lodash.uniq
 ```
@@ -37,9 +37,9 @@ import { get, tail, times, uniq } from './4';
 $ npm run analyze
 ```
 
-# Four Ways to Import Lodash
+# Four Methods to Import Lodash
 
-### 1. Import the whole library:
+### #1. Import the whole library:
 
 ```bash
 $ yarn add lodash
@@ -57,7 +57,7 @@ import _ from 'lodash';
   - Less readable usage in the javascript code
  
 
-### 2. Import specific methods inside of curly brackets:
+### #2. Import specific methods inside of curly brackets:
  
 ```bash
 $ yarn add lodash
@@ -75,7 +75,7 @@ import { get, tail, times, uniq } from 'lodash';
   - Every time we want use a new function or stop using another - it needs to be maintained and managed
  
 
-### 3. Import specific methods one by one:
+### #3. Import specific methods one by one:
 
 ```bash
 $ yarn add lodash
@@ -96,7 +96,7 @@ import uniq from 'lodash/uniq';
   - The import maintenance is much more complicated than the previous options
   - Lots of import lines in the head of the file don’t look nice and readable.
 
-### 4. Import specific methods and Install one by one:
+### #4. Import specific methods and Install one by one:
 
 ```bash
 $ yarn add lodash.get lodash.tail lodash.times lodash.uniq
