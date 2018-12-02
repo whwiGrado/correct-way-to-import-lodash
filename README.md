@@ -3,8 +3,33 @@
 this repo is create by `create-react-app`
 
 # Installation
+use method #1, install `lodash`
 ```bash
-$ yarn install
+$ yarn add lodash
+```
+import 1.js in `methods/index`
+```jsx harmony
+import _ from './1';
+const { get, tail, times, uniq } = _;
+```
+
+use method #1 #2 #3, install `lodash`
+```bash
+$ yarn add lodash
+```
+import 2.js or 3.js in `methods/index`
+```jsx harmony
+import { get, tail, times, uniq } from './2';
+// import { get, tail, times, uniq } from './3';
+```
+
+use #4, install `lodash.{method}` one by one
+```bash
+$ yarn add lodash.get lodash.tail lodash.times lodash.uniq
+```
+import 4.js in `methods/index`
+```jsx harmony
+import { get, tail, times, uniq } from './4';
 ```
 
 # Analyze the bundle size
